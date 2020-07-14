@@ -1,0 +1,59 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'team/styles/team.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="team-list">
+    <div class="ayhan card">
+        <div class="card-body">
+            <img src="{% static 'team/images/Ayhan_Circle.png' %}" class="profile-img img-fluid rounded-circle">
+            <div class="profile-information">
+                <h3 class="name">
+                    Ayhan Süleymanzadə
+                </h3>
+                <h5 class="position">
+                    PhBA Writer
+                </h5>
+                <h6 class="school">
+                    Tdv-Baku Turkish Lyceum
+                </h6>
+            </div>
+        </div>
+    </div>
+    <div class="murad card">
+        <div class="card-body">
+            <img src="{% static 'team/images/Murad_Circle.png' %}" class="profile-img img-fluid rounded-circle">
+            <div class="profile-information">
+                <h3 class="name">
+                    Murad Bəşirov
+                </h3>
+                <h5 class="position">
+                    PhBA Writer
+                </h5>
+                <h6 class="school">
+                    TET Gymnasium
+                </h6>
+            </div>
+        </div>
+    </div>
+    <div class="sirac card">
+        <div class="card-body">
+            <img src="{% static 'team/images/Sirac_Circle.png' %}" class="profile-img img-fluid rounded-circle">
+            <div class="profile-information">
+                <h3 class="name">
+                    Sirac Yəhyazadə
+                </h3>
+                <h5 class="position">
+                    PhBA Writer
+                </h5>
+                <h6 class="school">
+                    TET Gymnasium
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

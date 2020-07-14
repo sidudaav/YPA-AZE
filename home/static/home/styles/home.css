@@ -1,0 +1,59 @@
+#general, #prizes {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+#description {
+    max-width: 40%;
+    position: absolute;
+    top: 5%;
+    margin-left: 2rem;
+}
+
+img.logo {
+    max-width: 100%;
+}
+
+button.register {
+    position: relative;
+    padding: 3rem;
+    top: 5rem;
+    left: 45%;
+    margin-bottom: 10rem;
+}
+
+a.nav-link.home {
+    color: green;
+}
+
+@media only screen and (max-width: 40rem) {
+    img.logo {
+        max-width: 200%;
+    }
+
+    #description {
+        max-width: 40%;
+        position: absolute;
+        top: 12%;
+        margin-left: 2rem;
+    }
+
+    #general, #prizes {
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        position: relative;
+        top: 15rem;
+    }
+
+    button.register {
+        position: relative;
+        padding: 3rem;
+        top: 20rem;
+        left: 45%;
+        margin-bottom: 25rem;
+    }
+}

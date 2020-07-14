@@ -1,0 +1,84 @@
+.card {
+    width: 20rem;
+    height: 22rem;
+    box-shadow: 0.3rem 0.3rem 2rem -1rem black;
+}
+
+.card:hover {
+    background-color: rgb(169, 241, 253);
+    box-shadow: 0.3rem 0.3rem 2rem -0.5rem red;
+}
+
+img.profile-img {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    left: 3.6rem;
+    bottom: 6rem;
+}
+
+div.profile-information {
+    position: relative;
+    bottom: 6rem;
+    text-align: center;
+}
+
+h3.name {
+    position: relative;
+    font-size: 2rem;
+    top: 1rem;
+    font-weight: 600;
+}
+
+h5.position {
+    position: relative;
+    top: 3rem;
+}
+
+h6.school {
+    position: relative;
+    top: 5rem;
+    font-weight: 300;  
+}
+
+#team-list .card-columns {
+    display: inline-block;
+}
+
+#team-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 7rem;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+}
+
+a.nav-link.team {
+    color: green;
+}
+
+@media only screen and (max-width: 66rem) {
+    #team-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 7rem;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 44rem) {
+    #team-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 2rem;
+        row-gap: 7rem;
+        justify-items: center;
+        align-items: center;
+    }
+}

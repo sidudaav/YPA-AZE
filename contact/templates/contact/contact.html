@@ -1,0 +1,30 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'contact/styles/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="contact">
+    <h3>Bizimlə əlaqə</h3>
+    <div class="contact-points">
+        <div>
+            <h6 class="contact-type">PhBA Email</h6>
+            <p class="contact-point">physicsbowlazerbaijan@gmail.com</p>
+        </div>
+        <div>
+            <h6 class="contact-type">YPA Email</h6>
+            <p class="contact-point">YPAexec@gmail.com</p>
+        </div>
+        <div>
+            <h6 class="contact-type">YPA Website</h6>
+            <p class="contact-point"><a href="http://www.ypaphysics.org" target="_blank">www.ypaphysics.org</a></p>
+        </div>
+    </div>
+
+    <a href="https://www.facebook.com/Phyiscs-Bowl-Azerbaijan-101138745016033" class="fa fa-facebook"
+        target="_blank"></a>
+    <a href="https://www.instagram.com/phbazerbaijan" class="fa fa-instagram" target="_blank"></a>
+</div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'about/styles/about.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="rules">
+    <h3 class="rules-header">Qaydalar</h3>
+    <ol>
+        <li class="main-rule">
+            Hər bir komanda 2-4 şagirddən təşkil olunmalıdır​​.
+            <ul>
+                <li class="sub-rule">
+                    Şagirdlərin bir komandada olmaları üçün eyni məktəbdən olmaları məcburiyyət deyil.​
+                </li>
+            </ul>
+        </li>
+        <li class="main-rule">
+            Hər bir raund 15 cüt ''toss up" və "bonus" suallarından ibarət olacaq.​
+            <ul>
+                <li class="sub-rule">
+                    Hər bir "toss up" sualı 4 xal dəyərindədir və hər bir "bonus" sual 10 xal dəyərindədir​.
+                </li>
+                <li class="sub-rule">
+                    Komandanın "toss up" sualına verdiyi cavab səhv olsa və cavabı sual oxunub qurtarma versə opponent
+                    komanda 4 xal və cavab vermə haqqı qazanır, əgər verdikləri cavab düzgün olarsa, komdanda həmin
+                    sualdan ümumi 8 xal qazanıb "bonus" suala da cavab vermək haqqı qazanır, sual oxunub bitəndən sonra
+                    cavab verilsə heç bir komanda xal qazanmır və "bonus" sual olmur.
+                </li>
+                <li class="sub-rule">
+                    "Toss up" sualları üçün 20 saniyə ,"bonus" sualları üçün isə 30 saniyə cavablandırmağa vaxt
+                    verilir.
+                </li>
+                <li class="sub-rule">
+                    "Toss up" sualları individual cavablandırılmalıdır, "bonus" suallarında isə komanda müzakirə edə
+                    bilər. </li>
+            </ul>
+        </li>
+        <li class="main-rule">
+            Bütün suallar veriləndən sonra daha çox xala sahib olan komanda həmin turun qalibi sayılır.
+        </li>
+        <li class="main-rule">
+            Sonda komandaların balları eyni olarsa son suala düzgün cavab verən komanda qalib sayılır(son sual həmin
+            turun maksimum çətinlik dərəcəsinə sahib olan sual hesab edilir).
+        </li>
+        <li class="main-rule">
+            Rəqiblər təsadüfi olaraq seçiləcək.
+            <ul>
+                <li class="sub-rule">
+                    Yarışın formatı: hər bir turda komandalar təkbətək olaraq yarışır və komandalardan qazanan növbəti
+                    tura keçir. </li>
+            </ul>
+        </li>
+    </ol>
+</div>
+{% endblock %}
