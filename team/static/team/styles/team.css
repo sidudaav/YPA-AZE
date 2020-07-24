@@ -50,6 +50,8 @@ h6.school {
     align-items: center;
     position: relative;
     top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 a.nav-link.team {
