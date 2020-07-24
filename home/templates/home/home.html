@@ -6,40 +6,53 @@
 {% endblock %}
 
 {% block content %}
-<div id="general">
-    <h3>Ümumi məlumat</h3>
-    <ul>
-        <li>Qeydiyyatdan keçmək üçün komanda 2-4 nəfərdən təşkil olunmalıdır.</li>
-        <li>Turnament 9,10,11-ci sinif və özünə güvənən aşağı sinif şagirdləri üçün nəzərdə tutulub</li>
-        <li>Şagirdlərin bir biri ilə qarşı qarşıya gəlməyi sinfindən asılı deyil, yəni 8ci sinif 11ci sinifə qarşı
-            yarışa bilər.</li>
-        <li>Turnamentin sillabusu Azərbaycan məktəb kurikulumundan bir qədər kənara çıxır.</li>
-        <li>Turnament 9 Avqust 2020 tarixində “Zoom” programı vasitəsilə keçiriləcək.</li>
-        <li>Tələbdən asılı olaraq, ilk qeydiyyatdan keçən 32 və ya 64 şagird turnamentdə iştirak edə biləcək.</li>
-    </ul>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="main-description">
+                Komandamız Amerika Birləşmiş ştatlarının və Kanadanın YPA(Young Physicists Association) qurumu ilə
+                əməkdaşlıq
+                edir.
+                Bu “Physics Bowl” turnamenti Azərbaycanda ilk dəfə Təhsil Nazirliyinin dəstəyi ilə keçirilir.
+                Bu turnament fizikanı və sürətli “quiz bowl” formatını(daha ətraflı “Haqqında” bölməsində) sevənlər üçün
+                əla
+                fürsətdir.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img id="logo" src="{% static 'home/images/logo.png' %}">
+        </div>
+    </div>
 </div>
 
-<div id="prizes">
-    <h3>Hədiyyələr</h3>
-    <ul>
-        <li>1-ci yer - 100 AZN</li>
-        <li>2-ci yer - 75 AZN</li>
-        <li>3-cü yer - 50 AZN -lıq hədiyyə kartı</li>
-    </ul>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <h3>Ümumi məlumat</h3>
+            <ul>
+                <li>Qeydiyyatdan keçmək üçün komanda 2-4 nəfərdən təşkil olunmalıdır.</li>
+                <li>Turnament 9,10,11-ci sinif və özünə güvənən aşağı sinif şagirdləri üçün nəzərdə tutulub</li>
+                <li>Şagirdlərin bir biri ilə qarşı qarşıya gəlməyi sinfindən asılı deyil, yəni 8ci sinif 11ci sinifə
+                    qarşı
+                    yarışa bilər.</li>
+                <li>Turnamentin sillabusu Azərbaycan məktəb kurikulumundan bir qədər kənara çıxır.</li>
+                <li>Turnament 9 Avqust 2020 tarixində “Zoom” programı vasitəsilə keçiriləcək.</li>
+                <li>Tələbdən asılı olaraq, ilk qeydiyyatdan keçən 32 və ya 64 şagird turnamentdə iştirak edə biləcək.
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-5">
+            <h3>Hədiyyələr</h3>
+            <ul>
+                <li>1-ci yer - 100 AZN</li>
+                <li>2-ci yer - 75 AZN</li>
+                <li>3-cü yer - 50 AZN -lıq hədiyyə kartı</li>
+            </ul>
+            <a href="https://forms.gle/kN9R51wNXPtE164p6" target="_blank">
+                <button type="button" class="center btn btn-large btn-outline-success">QEYDİYYAT</button>
+            </a>
+        </div>
+    </div>
 </div>
-
-<div id="description">
-    <img class="logo" src="{% static 'home/images/logo.png' %}">
-    <p>
-        Komandamız Amerika Birləşmiş ştatlarının və Kanadanın YPA(Young Physicists Association) qurumu ilə əməkdaşlıq
-        edir.
-        Bu “Physics Bowl” turnamenti Azərbaycanda ilk dəfə Təhsil Nazirliyinin dəstəyi ilə keçirilir.
-        Bu turnament fizikanı və sürətli “quiz bowl” formatını(daha ətraflı “Haqqında” bölməsində) sevənlər üçün əla
-        fürsətdir.
-    </p>
-</div>
-
-<a href="https://forms.gle/kN9R51wNXPtE164p6" target="_blank">
-    <button type="button" class="register btn btn-large btn-outline-success">QEYDİYYAT</button>
-</a>
 {% endblock %}
