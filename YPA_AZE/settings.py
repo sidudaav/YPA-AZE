@@ -33,10 +33,7 @@ ALLOWED_HOSTS = ['*', 'https://ypaphysicsaze.herokuapp.com/']
 # Application definition
 
 INSTALLED_APPS = [
-    'home.apps.HomeConfig',
-    'about.apps.AboutConfig',
-    'team.apps.TeamConfig',
-    'contact.apps.ContactConfig',
+    'ypa_aze_app.apps.YpaAzeAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
