@@ -4,23 +4,23 @@ def home(request):
     context = {
         'title': 'Əsas səhifə'
     }
-    return render(request, 'home/home.html', context)
+    return render(request, 'home.html', context)
 
 def about(request):
     context = {
         'title': 'Haqqında'
     }
 
-    return render(request, 'about/about.html', context)
+    return render(request, 'about.html', context)
 
 def contact(request):
     context = {
         'title': 'Əlaqə'
     }
-    return render(request, 'contact/contact.html', context)
+    return render(request, 'contact.html', context)
 
 def team(request):
     context = {
         'title': 'Komanda'
     }
-    return render(request, 'team/team.html', context)
+    return render(request, 'team.html', context)
