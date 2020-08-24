@@ -17,7 +17,7 @@ def about(request):
 def schedule_of_teams(request):
     context = {
         'title':'Yarış cədvəli',
-        'meetings':Meeting.objects.all()
+        'meetings':Meeting.objects.order_by('time')
     }   
     return render(request,'schedule_of_teams.html',context)
 
