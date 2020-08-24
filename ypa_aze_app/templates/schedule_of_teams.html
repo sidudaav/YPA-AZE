@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+<h1>PhBA Yarış cədvəli</h1>
+<br>
+<table class="table">
+    <tr>
+        <th>Vaxt</th>
+        <th>1-ci Komanda</th>
+        <th>2-ci Komanda</th>
+        <th>3-cü Komanda</th>
+    </tr>
+    {% for meeting in meetings %}
+        <tr>
+            <td>{{ meeting.time }}</td>
+            <td>{{ meeting.team1 }}</td>
+            <td>{{ meeting.team2 }}</td>
+            <td>{{ meeting.team3 }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}
