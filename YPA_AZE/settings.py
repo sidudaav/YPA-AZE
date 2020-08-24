@@ -21,11 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '3lk0u=y-=i0ip86nxc84#y+d8hllc+rm#6zks^8+v6^vpstrib'
-#SECRET_KEY = os.environ.get('YPA_AZE_SECRET_KEY')
+#SECRET_KEY = '3lk0u=y-=i0ip86nxc84#y+d8hllc+rm#6zks^8+v6^vpstrib'
+SECRET_KEY = os.environ.get('YPA_AZE_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('YPA_AZE_DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['*', 'https://ypaphysicsaze.herokuapp.com/']
 
