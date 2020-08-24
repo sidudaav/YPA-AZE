@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import json
+from .models import Meeting
 
 def home(request):
     context = {
@@ -15,10 +15,10 @@ def about(request):
     return render(request, 'about.html', context)
 
 def schedule_of_teams(request):
-    with open('./schedule_of_teams.json',encoding='utf-8') as f:
-        context = json.load(f)
-    context['title'] = 'Yarış cədvəli'
-    
+    context = {
+        'title':'Yarış cədvəli',
+        'meetings':Meeting.objects.all()
+    }   
     return render(request,'schedule_of_teams.html',context)
 
 def contact(request):
