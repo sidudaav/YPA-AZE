@@ -15,7 +15,7 @@ def about(request):
     return render(request, 'about.html', context)
 
 def schedule_of_teams(request):
-    with open('schedule_of_teams.json',encoding='utf-8') as f:
+    with open('./schedule_of_teams.json',encoding='utf-8') as f:
         context = json.load(f)
     context['title'] = 'Yarış cədvəli'
     
